@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- Auteur- Paul Beauregard -->
+<html>
+	<head>
+		<style>
+.hori-nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+        .hori-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    }
+
+    .hori-nav li {
+    float: left;
+    }
+
+    .hori-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    .hori-nav li a:hover {
+    background-color: #111111;
+    }
+    
+    .hori-nav li a.active {
+    background-color: #111111;
+    pointer-events: none;
+    cursor: default;
+    }
+	.vert-nav {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  width: 200px;
+	  background-color: #f1f1f1;
+	}
+
+	li a {
+	  display: block;
+	  color: black;
+	  padding: 8px 16px;
+	  text-decoration: none;
+	}
+
+	/* Change the link and background color on hover */
+	li a:hover {
+	  background-color: #555555;
+	  color: white;
+	}
+	
+	body {
+  font-family: Nunito, sans-serif, Arimo;
+}
+	div {
+  position: relative;
+  background-color: #ffc;
+  padding: 2rem;
+  text-align: center;
+  max-width: 700px;
+}
+
+div::before {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+  bottom: 15px;
+  right: 5px;
+  width: 50%;
+  top: 80%;
+  max-width: 200px;
+
+  box-shadow: 0px 13px 10px black;
+  transform: rotate(4deg);
+}
+/* Source: https://www.w3schools.com/css */
+		</style>
+		<title>Exercice #3</title>
+	</head>
+  <body>
+  <ul class="hori-nav">
+			<li><a href="index.html">Retour à l'Accueil</a></li>
+			<li><a href="exercice1.html">Exercice #1</a></li>
+			<li><a href="exercice2.html">Exercice #2</a></li>
+			<li><a href="exercice3.html" class="active">Exercice #3</a></li>
+	</ul>
+    <h1 id="haut">Mes animaux préférés</h1>
+    <ul class="vert-nav">
+      <li><a href="#chien">Chien</a></li>
+      <li><a href="#panda">Panda</a></li>
+      <li><a href="#axolotl">Axolotl</a></li>
+    </ul>
+    <hr>
+    <h3 id="chien">Chien</h3>
+    <p>Voici un paragraphe qui décrit un chien de Wikipedia (<a href = "https://fr.wikipedia.org/wiki/Chien" target = "_blank"> Lien Wikipedia</a>).</p>
+    <img src = "images/chien.webp" width = 400/>
+	<div>Le flair d’un chien est incroyablement puissant ! Grâce à ses centaines de millions de récepteurs olfactifs, il peut détecter certaines odeurs à des concentrations jusqu’à 100 000 fois plus faibles que celles que les humains peuvent percevoir. Impressionnant, non ?</div>
+    <hr>
+    <h3 id="panda">Panda</h3>
+        <p>Voici un paragraphe qui décrit un Panda de Wikipedia (<a href = "https://fr.wikipedia.org/wiki/Panda_g%C3%A9ant" target = "_blank"> Lien Wikipedia</a>).</p>
+         <img src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbe37jhQWRHReQnjqNbNLL-f19hq7SUNczXjVwpncI8pO17uebTqyjEY1aOls9bGlt-DIdond_caVuWWU-9Waq-BUDf08LJuiwIYDKVw&s width = 400/>
+		 <div>Le Panda géant passe environ 12 à 14 heures par jour à manger du bambou… et peut en consommer jusqu’à 20 kg quotidiennement ! Malgré son régime presque exclusivement végétarien, il appartient à la famille des ours.</div>
+    <hr>
+    <h3 id="axolotl">Axolotl</h3>
+        <p>Voici un paragraphe qui décrit un Axolotl de Wikipedia (<a href = "https://fr.wikipedia.org/wiki/Axolotl" target = "_blank"> Lien Wikipedia</a>).</p>
+         <img src = https://i.natgeofe.com/n/de94c416-6d23-45f5-9708-e8d56289268e/naturepl_01132178_16x9.jpg?w=1200 width = 400/>
+		 <div>L’Axolotl peut régénérer non seulement ses pattes, mais aussi son cœur, sa moelle épinière et même certaines parties de son cerveau ! Et contrairement à la plupart des amphibiens, il reste toute sa vie à l’état “larvaire” sans se métamorphoser complètement. Incroyable, non ?</div>
+    <hr>
+    <h4><a href = "#haut"> <img src = https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/up-arrow-icon.png width = 100></a></h4>
+  </body>
+</html>
+
