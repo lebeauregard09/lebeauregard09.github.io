@@ -1,46 +1,62 @@
 <!-- Auteur : Paul Beauregard -->
-
 <!DOCTYPE html>
 
 <html>
-
 	<head>
 	<style>
 	ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-}
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    }
 
-li a {
-  display: block;
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
-}
+    ul li {
+    float: left;
+    }
 
-/* Change the link and background color on hover */
-li a:hover {
-  background-color: #555555;
-  color: white;
+    ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    ul li a:hover {
+    background-color: #111111;
+    }
+    
+    ul li a.active {
+    background-color: #111111;
+    pointer-events: none;
+    cursor: default;
+    }
+	
+body {
+  font-family: Nunito, sans-serif, Arimo;
 }
-		/* Source : https://www.w3schools.com/css */
+/* Sources: https://www.w3schools.com/css, https://developer.mozilla.org/fr/docs/Learn_web_development/Howto/Solve_CSS_problems/Create_fancy_boxes */
 	</style>
 		<meta charset="UTF-8">
 		<title>Mes Travaux ICS3U</title>
 	</head>
 	
 	<body>
-	
-		<h1>Mes Travaux ICS3U</h1>
-		<p>Auteur : Paul Beauregard</p>
 		<ul>
+			<li><a href="index.html" class="active">Retour à l'Accueil</a></li>
 			<li><a href="exercice1.html">Exercice #1</a></li>
 			<li><a href="exercice2.html">Exercice #2</a></li>
 			<li><a href="exercice3.html">Exercice #3</a></li>
 		</ul>
+		<h1>Mes Travaux ICS3U</h1>
+		<p>Auteur : Paul Beauregard</p>
 		<p>Voici mon niveau de compétence dans HTML, CSS, et Javascript.</p>
 		<table border = "1">
 			<thead>
@@ -48,8 +64,8 @@ li a:hover {
 			</thead>
 			<tbody>
 				<tr>
-					<td>Langage</td>
-					<td>Compétence</td>
+					<td><b>Langage</b></td>
+					<td><b>Compétence</b></td>
 				</tr>
 				<tr>
 					<td>HTML</td>
@@ -61,7 +77,7 @@ li a:hover {
 				</tr>
 				<tr>
 					<td>Javascript</td>
-					<td>À venir<td/>
+					<td>À venir</td>
 				</tr>
 			</tbody>
 		</table>
