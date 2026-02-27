@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    }
+
+    ul li {
+    float: left;
+    }
+
+    ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    ul li a:hover {
+    background-color: #111111;
+    }
+    
+    ul li a.active {
+    background-color: #111111;
+    pointer-events: none;
+    cursor: default;
+    }
+	
+	body {
+  font-family: Nunito, sans-serif, Arimo;
+}
+/* Sources: https://www.w3schools.com/css, https://developer.mozilla.org/fr/docs/Learn_web_development/Howto/Solve_CSS_problems/Create_fancy_boxes */
+</style>
+<title>Exercice 2</title>
+<link rel="icon" href="images/user-p.jpg" type="image/jpg">
+</head>
+  <body>
+  <ul id="haut">
+			<li><a href="index.html">Retour à l'Accueil</a></li>
+			<li><a href="exercice1.html">Exercice #1</a></li>
+			<li><a href="exercice2.html" class="active">Exercice #2</a></li>
+			<li><a href="exercice3.html">Exercice #3</a></li>
+	</ul>
+      <h1>Cours ICS3U - Génie informatique</h1>
+      <p> Voici mes <u>travaux accomplis</u> durant le semestre. <i>Quel succès !</i></p>
+      <p><b>Mes pages HTML</b></p>
+      <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1280px-HTML5_logo_and_wordmark.svg.png" width=130/>
+      <p>J'ajouterai des liens <i>sous peu</i>...</p>
+      <br>
+      <p><b>Mes ajouts CSS</b></p>
+      <img src = https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/960px-CSS3_logo_and_wordmark.svg.png width = 105/>
+      <p> À venir ...</p>
+      <br>
+      <p><b>Mes codes Javascript</b></p>
+      <img src = https://assets.pluhe.com/blog/small/JqxsAtj7G5bc4D8vfE5LKrGjLhm2dgYi7aRtEXBd.jpg width = 105/>
+      <p>À venir ...</p>
+	            <h1>Cours ICS3U - Génie informatique</h1>
+      <p> Voici mes <u>travaux accomplis</u> durant le semestre. <i>Quel succès !</i></p>
+      <p><b>Mes pages HTML</b></p>
+      <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1280px-HTML5_logo_and_wordmark.svg.png" width=130/>
+      <p>J'ajouterai des liens <i>sous peu</i>...</p>
+      <br>
+      <p><b>Mes ajouts CSS</b></p>
+      <img src = https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/960px-CSS3_logo_and_wordmark.svg.png width = 105/>
+      <p> À venir ...</p>
+      <br>
+      <p><b>Mes codes Javascript</b></p>
+      <img src = https://assets.pluhe.com/blog/small/JqxsAtj7G5bc4D8vfE5LKrGjLhm2dgYi7aRtEXBd.jpg width = 105/>
+      <p>À venir ...</p>
+    <table border = "1">
+      <thead>
+        <tr>
+       <th>Langage</th>
+       <th>Mot clé</th>
+       <th>Utilité</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan = "5">HTML</td>
+          <td>html</td>
+          <td>C’est l’élément racine du document. Tout le contenu de la page doit être à l’intérieur de cette balise.</td>
+        </tr>
+        <tr>
+          <td>head</td>
+          <td>Contient tout le contenu visible : texte, images, boutons, tableaux, etc.</td>
+        </tr>
+        <tr>
+          <td>a</td>
+          <td>Permet de créer un lien hypertexte.
+On utilise l’attribut href pour indiquer l’adresse de destination.</td>
+        </tr>
+        <tr>
+          <td>div</td>
+          <td>Conteneur générique servant à regrouper des éléments pour organiser la page ou appliquer du style.</td>
+        </tr>
+        <tr>
+          <td>body</td>
+          <td>Contient tout le contenu visible : texte, images, boutons, tableaux, etc.</td>
+        </tr>
+        <tr>
+          <td rowspan = "5">CSS</td>
+          <td>color</td>
+          <td>Définit la couleur du texte.</td>
+        </tr>
+        <tr>
+          <td>background-color</td>
+          <td>Définit la couleur d’arrière-plan d’un élément.</td>
+        </tr>
+        <tr>
+          <td>display</td>
+          <td>Détermine la manière dont un élément est affiché (block, inline, flex, none, etc.).</td>
+        </tr>
+        <tr>
+          <td>margin</td>
+          <td>Définit l’espace extérieur autour d’un élément.</td>
+        </tr>
+        <tr>
+          <td>padding</td>
+          <td>Définit l’espace intérieur entre le contenu et la bordure.</td>
+        </tr>
+        <tr>
+          <td rowspan = "5">Javascript</td>
+          <td>let</td>
+          <td>Déclare une variable dont la valeur peut être modifiée.</td>
+        </tr>
+        <tr>
+          <td>const</td>
+          <td>Déclare une variable constante (sa valeur ne peut pas être changée).</td>
+        </tr>
+        <tr>
+          <td>function</td>
+          <td>Permet de définir une fonction, c’est-à-dire un bloc de code réutilisable.</td>
+        </tr>
+        <tr>
+          <td>if</td>
+          <td>Permet de créer une condition (exécuter du code seulement si une condition est vraie).</td>
+        </tr>
+        <tr>
+          <td>document</td>
+          <td>Objet qui représente la page web et permet de modifier son contenu.</td>
+        </tr>
+      </tbody>
+    </table>
+	<h4><a href = "#haut"> <img src = https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/up-arrow-icon.png width = 100></a></h4>
+  </body>
+</html>
