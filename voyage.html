@@ -1,0 +1,178 @@
+<html>
+
+	<head>
+		<style>
+				* {box-sizing:border-box}
+
+			/* container */
+			.slideshow-container {
+			  max-width: 1000px;
+			  position: relative;
+			  margin: auto;
+			  float: right;
+			}
+
+			/* cacher les images par défaut
+			.mySlides {
+			  display: none;
+			}
+
+			/* bouttons */
+			.prev, .next {
+			  cursor: pointer;
+			  position: absolute;
+			  top: 50%;
+			  width: auto;
+			  margin-top: -22px;
+			  padding: 16px;
+			  color: white;
+			  font-weight: bold;
+			  font-size: 18px;
+			  transition: 0.6s ease;
+			  border-radius: 0 3px 3px 0;
+			  user-select: none;
+			}
+
+			/* positionner le "prochain boutton" à la droite */
+			.next {
+			  right: 0;
+			  border-radius: 3px 0 0 3px;
+			}
+
+			/* changer couleur pour hover */
+			.prev:hover, .next:hover {
+			  background-color: rgba(0,0,0,0.8);
+			}
+
+			/* texte pour caption */
+			.text {
+			  color: #f2f2f2;
+			  font-size: 15px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  bottom: 8px;
+			  width: 100%;
+			  text-align: center;
+			}
+
+			/* nombre texte (1/5 etc) */
+			.numbertext {
+			  color: #f2f2f2;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: 0;
+			}
+
+			/* les dots */
+			.dot {
+			  cursor: pointer;
+			  height: 15px;
+			  width: 15px;
+			  margin: 0 2px;
+			  margin-top: 6px;
+			  background-color: #bbb;
+			  border-radius: 50%;
+			  display: inline-block;
+			  transition: background-color 0.6s ease;
+			}
+
+			.active, .dot:hover {
+			  background-color: #717171;
+			}
+
+			/* animation */
+			.fade {
+			  animation-name: fade;
+			  animation-duration: 1.5s;
+			}
+
+			@keyframes fade {
+			  from {opacity: .4}
+			  to {opacity: 1}
+			}
+			
+			.big {
+				float: right;
+			}
+			/* Source pour html, javascript, et css pour carrousel: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+		</style>
+		<meta charset="UTF-8">
+		<title>Exemple HTML</title>
+	</head>
+	
+	<body>
+		<h1>Mon voyage parfait</h1>
+			<!-- carrousel d'images -->
+		<div class="big">
+			<div class="slideshow-container">
+
+			  <!-- Images avec text et nombres -->
+			  <div class="mySlides fade">
+				<div class="numbertext">1 / 5</div>
+				<img src="images/eiffel.jpg" style="width:100%">
+				<div class="text">Tour Eiffel</div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<div class="numbertext">2 / 5</div>
+				<img src="images/louvre.jpg" style="width:100%">
+				<div class="text">Musée du Louvre</div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<div class="numbertext">3 / 5</div>
+				<img src="images/cathédrale.jpg" style="width:100%">
+				<div class="text">Cathédrale Notre-Dame de Paris</div>
+			  </div>
+			  
+			   <div class="mySlides fade">
+				<div class="numbertext">4 / 5</div>
+				<img src="images/arc.jpg" style="width:100%">
+				<div class="text">Arc de Triomphe</div>
+			  </div>
+			  
+			   <div class="mySlides fade">
+				<div class="numbertext">5 / 5</div>
+				<img src="images/montmarte.jpg" style="width:100%">
+				<div class="text">Montmarte</div>
+			  </div>
+
+			  <!-- Bouttons -->
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+
+			<!-- Les cercles -->
+			<div class="dots" style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			  <span class="dot" onclick="currentSlide(4)"></span>
+			  <span class="dot" onclick="currentSlide(5)"></span>
+			</div>
+		</div>
+		<script src="scripts/carrousel.js" defer></script>
+		<!-- source: https://www.digitalocean.com/community/tutorials/how-to-add-javascript-to-html -->
+		<h2>Description de la destination</h2>
+		<p>Paris est la capitale de la France et l’une des villes les plus visitées au monde. Située au bord de la Seine, elle est reconnue pour son patrimoine historique, son architecture monumentale et son influence culturelle. On y retrouve des monuments emblématiques, des musées de renommée internationale et une tradition gastronomique profondément ancrée dans l’histoire française. Surnommée « la Ville Lumière », Paris a joué un rôle majeur dans les domaines de l’art, de la littérature, de la mode et de la philosophie depuis plusieurs siècles.</p>
+		<br>
+		<h2>Endroits intéressants à visiter</h2>
+		<p>1. Tour Eiffel</p>
+		<p>Symbole emblématique de Paris, construite en 1889 pour l’Exposition universelle.</p>
+		<br>
+		<p>Musée du Louvre</p>
+		<p>Le plus grand musée d’art au monde, célèbre pour abriter la Mona Lisa.</p>
+		<br>
+		<p>Cathédrale Notre-Dame de Paris</p>
+		<p>Chef-d’œuvre de l’architecture gothique, commencée au XIIe siècle.</p>
+		<br>
+		<p>Arc de Triomphe</p>
+		<p>Monument honorant les soldats français, situé sur les Champs-Élysées.</p>
+		<br>
+		<p>Montmartre</p>
+		<p>Quartier artistique connu pour ses ruelles pittoresques et la basilique du Sacré-Cœur.</p>
+	</body>
+	
+</html>
