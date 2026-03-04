@@ -1,12 +1,14 @@
 <html>
 
 	<head>
+	
 		<style>
 				* {box-sizing:border-box}
 
 			/* container */
 			.slideshow-container {
 			  max-width: 1000px;
+			  max-height: 700px;
 			  position: relative;
 			  margin: auto;
 			  margin-right: 40px;
@@ -99,15 +101,36 @@
 			
 			.big {
 				float: right;
+				margin-top: 20px;
 			}
+			
+			.centre {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.tableau {
+				margin-top: 20px;
+			}
+			
+			.description {
+				max-width: 750px;
+			}
+			
 			/* Source pour html, javascript, et css pour carrousel: https://www.w3schools.com/howto/howto_js_slideshow.asp */
 		</style>
+		<link rel="stylesheet" href="css/styles.css">
 		<meta charset="UTF-8">
 		<title>Mon voyage parfait</title>
 	</head>
-	
+	</head>
 	<body>
-		<h1>Mon voyage parfait</h1>
+		<ul class="navbar">
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="poeme.html">Poeme</a></li>
+			<li><a href="voyage.html" class="active">Voyage</a></li>
+			<li><a href="biographie.html">Biographie</a></li>
+		</ul>
 			<!-- carrousel d'images -->
 		<div class="big">
 			<div class="slideshow-container">
@@ -115,7 +138,7 @@
 			  <!-- Images avec text et nombres -->
 			  <div class="mySlides fade">
 				<div class="numbertext">1 / 5</div>
-				<img src="images/eiffel.jpg" style="width:100%">
+				<div><img src="images/eiffel.jpg" style="width:100%"></div>
 				<div class="text">Tour Eiffel</div>
 			  </div>
 
@@ -139,7 +162,7 @@
 			  
 			   <div class="mySlides fade">
 				<div class="numbertext">5 / 5</div>
-				<img src="images/montmarte.jpg" style="width:100%">
+				<img src="images/montmartre.jpg" style="width:100%">
 				<div class="text">Montmarte</div>
 			  </div>
 
@@ -160,25 +183,64 @@
 		</div>
 		<script src="scripts/carrousel.js" defer></script>
 		<!-- source: https://www.digitalocean.com/community/tutorials/how-to-add-javascript-to-html -->
+		<h1>Mon voyage parfait</h1>
+		<br>
 		<h2>Description de la destination</h2>
-		<p>Paris est la capitale de la France et l’une des villes les plus visitées au monde. Située au bord de la Seine, elle est reconnue pour son patrimoine historique, son architecture monumentale et son influence culturelle. On y retrouve des monuments emblématiques, des musées de renommée internationale et une tradition gastronomique profondément ancrée dans l’histoire française. Surnommée « la Ville Lumière », Paris a joué un rôle majeur dans les domaines de l’art, de la littérature, de la mode et de la philosophie depuis plusieurs siècles.</p>
-		<br>
+		<div class="description"><p>Paris est la capitale de la France et l’une des villes les plus visitées au monde. Située au bord de la Seine, elle est reconnue pour son patrimoine historique, son architecture monumentale et son influence culturelle. On y retrouve des monuments emblématiques, des musées de renommée internationale et une tradition gastronomique profondément ancrée dans l’histoire française. Surnommée « la Ville Lumière », Paris a joué un rôle majeur dans les domaines de l’art, de la littérature, de la mode et de la philosophie depuis plusieurs siècles.</p></div>
 		<h2>Endroits intéressants à visiter</h2>
-		<p>1. Tour Eiffel</p>
+		<p><b>1. Tour Eiffel</b></p>
 		<p>Symbole emblématique de Paris, construite en 1889 pour l’Exposition universelle.</p>
-		<br>
-		<p>Musée du Louvre</p>
+		<p><b>2. Musée du Louvre</b></p>
 		<p>Le plus grand musée d’art au monde, célèbre pour abriter la Mona Lisa.</p>
-		<br>
-		<p>Cathédrale Notre-Dame de Paris</p>
+		<p><b>3. Cathédrale Notre-Dame de Paris</b></p>
 		<p>Chef-d’œuvre de l’architecture gothique, commencée au XIIe siècle.</p>
-		<br>
-		<p>Arc de Triomphe</p>
+		<p><b>4. Arc de Triomphe</b></p>
 		<p>Monument honorant les soldats français, situé sur les Champs-Élysées.</p>
-		<br>
-		<p>Montmartre</p>
+		<p><b>5. Montmartre</b></p>
 		<p>Quartier artistique connu pour ses ruelles pittoresques et la basilique du Sacré-Cœur.</p>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<h2 style="text-align: center;">Voici une liste de mets populaires en France<h2>
+		<div class="tableau">
+			<table class="centre" border = "1">
+			  <thead>
+				<tr>
+			   <th>Met</th>
+			   <th>Description</th>
+			   <th>Photo</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>Croissant</td>
+				  <td>Viennoiserie feuilletée au beurre, consommée au petit-déjeuner.</td>
+				  <td><img src="https://static01.nyt.com/images/2021/04/07/dining/06croissantsrex1/merlin_184841898_ccc8fb62-ee41-44e8-9ddf-b95b198b88db-videoSixteenByNineJumbo1600.jpg" width=300></td>
+				</tr>
+				<tr>
+				  <td>Baguette</td>
+				  <td>Pain traditionnel français à croûte croustillante.</td>
+				  <td><img src="https://static01.nyt.com/images/2023/07/21/multimedia/21baguettesrex-hbkc/21baguettesrex-hbkc-videoSixteenByNineJumbo1600.jpg" width=300></td>
+				</tr>
+				<tr>
+				  <td>Steak frites</td>
+				  <td>Plat classique composé de bœuf grillé et de frites.</td>
+				  <td><img src="https://recipe30.com/wp-content/uploads/2023/07/Steak-frites.jpg" width=300></td>
+				</tr>
+				<tr>
+				  <td>Fromages français</td>
+				  <td>Large variété de fromages comme le brie et le camembert.</td>
+				  <td><img src="https://www.mgc-prevention.fr/wp-content/uploads/2015/10/france_fromage_70610215_web.jpg" width=300></td>
+				</tr>
+				<tr>
+				  <td>Crème brûlée</td>
+				  <td>Dessert à base de crème à la vanille avec une couche de sucre caramélisé.</td>
+				  <td><img src="https://dairyfarmersofcanada.ca/sites/default/files/styles/recipe_image/public/image_file_browser/conso_recipe/canadian-creme-brulee.jpg.jpeg?itok=S7fvUGIV" width=300></td>
+				</tr>
+			  </tbody>
+			</table>
+		</div>
 	</body>
 	
 </html>
-
