@@ -3,26 +3,48 @@
 <html>
 
 	<head>
-	<style>
-	
-	img {
-		float: right;
-		padding-right: 450px;
-		padding-top: 40px;
-	}
-	
-	div {
-		padding-top: 100px;
-		padding-left: 400px;
-	
-	</style>
+		<style>
+			.auteur2 {
+				float: right;
+				padding-right: 400px;
+				padding-top: 40px;
+			}
+			
+			div {
+				position: absolute;
+				right: 55%;
+				top: 10%;
+				/* Source : https://www.w3schools.com/howto/howto_css_image_text.asp */
+			}
+			
+			.auteur {
+				float: left;
+				padding-left: 90px;
+			}
+			
+			.auteur3 {
+				padding-top: 50px;
+				padding-right: 50px;
+			}
+		</style>
+		<link rel="stylesheet" href="css/styles.css">
 		<meta charset="UTF-8">
 		<title>Demain dès l'aube...</title>
 	</head>
 	<body>
-		<img src="https://cdn.britannica.com/40/1340-050-39EB4F43/photograph-Victor-Hugo-Nadar.jpg" width = 600/>
-		<div>
-			<h1>Demain dès l’aube…</h1>
+		<ul class="navbar">
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="poeme.html" class="active">Poeme</a></li>
+			<li><a href="voyage.html">Voyage</a></li>
+			<li><a href="biographie.html">Biographie</a></li>
+		</ul>
+		<img class="auteur2" src="https://cdn.britannica.com/40/1340-050-39EB4F43/photograph-Victor-Hugo-Nadar.jpg" width = 580/>
+		<div style="text-align:center;">
+			<h1> <a href="https://lesvoixdelapoesie.ca/lire/poemes/demain-des-laube">Demain dès l’aube…</a></h1>
+			<img class="auteur" src=https://upload.wikimedia.org/wikipedia/commons/b/b7/Victor_Hugo_circa_1880.jpg width = 100>
+			<h2 class="auteur3">Victor Hugo</h2>
+			<br>
+			<br>
 			<br>
 			<p>Demain, dès l’aube, à l’heure où blanchit la campagne,</p>
 			<p>Je partirai. Vois-tu, je sais que tu m’attends.</p>
@@ -39,7 +61,6 @@
 			<p>Et quand j’arriverai, je mettrai sur ta tombe</p>
 			<p>Un bouquet de houx vert et de bruyère en fleur.</p>
 			<br>
-			<p> <a href="https://lesvoixdelapoesie.ca/lire/poemes/demain-des-laube">source</a>
 		</div>
 	</body>
 	
