@@ -9,9 +9,45 @@
 			  height: 300px;
 			  border-radius: 50%;
 			  display: block;
-			  margin: auto;
+			  margin: 0px 1250px;
 			  /* source: https://www.w3schools.com/howto/howto_css_image_avatar.asp --> */
 		}
+		
+		.vl {
+		  border-left: 1px solid black;
+		  height: 800px;
+		  position: absolute;
+		  left: 50%;
+		  margin-left: -3px;
+		  top: 15%;
+		  /* Source: https://www.w3schools.com/howto/howto_css_vertical_line.asp */
+		}
+		
+		.info1 {
+			max-width: 650px;
+			float: right;
+			margin-right: 165px
+		}
+		
+		.info2 {
+			max-width: 650px;
+			float: left;
+			text-align: center;
+			margin-left: 140px
+		}
+		
+		body::before {
+				content: "";
+				top: 0;
+				left: 0;
+				width: 100%;
+				height:105%;
+				background-image: url("https://ethz.ch/en/studies/bachelor/beginning-your-studies/subject-related-preparation/programming-beginners/_jcr_content/par/fullwidthimage/image.imageformat.1286.1887369971.jpg");
+				background-size: cover;
+				opacity: 0.2;
+				position: absolute;
+				z-index: -1;
+				}
 	</style>
 		<meta charset="UTF-8">
 		<title>Biographie</title>
@@ -25,10 +61,66 @@
 			<li><a href="voyage.html">Voyage</a></li>
 			<li><a href="biographie.html" class="active">Biographie</a></li>
 		</ul>
-		<h1>Biographie</h1>
-		<img class=alex src="images/alex.jpg" width=500>
-		<br>
-		<div class="intro">
+		<h1 style="text-align: center;">Biographie</h1>
+		<div class="vl"></div>
+		<div class="info2">
+			<h2>Bonjour!</h2>
+			<p>Bienvenue sur ma page personnelle ! Passionné par la technologie et la créativité, je consacre mon temps à concevoir des projets numériques innovants et à explorer les nouvelles tendances du web. Mon objectif est de créer des outils et des expériences interactives qui rendent la technologie plus accessible et plus humaine.</p>
+			<hr>
+			<h2>Centres d’intérêt</h2>
+			<h3 style="text-align: left;">Technologies préférées</h3>
+			<p style="text-align: left;">HTML : <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank">https://developer.mozilla.org/fr/docs/Web/HTML</a></p>
+			<p style="text-align: left;">CSS : <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank">https://developer.mozilla.org/fr/docs/Web/CSS</a></p>
+			<p style="text-align: left;">Javascript : <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank">https://developer.mozilla.org/fr/docs/Web/JavaScript</a></p>
+			<p style="text-align: left;">Python : <a href="https://www.python.org/" target="_blank">https://www.python.org/</a></p>
+			<hr>
+			<h3 style="text-align: left;">Passe-temps</h3>
+			<p style="text-align: left;">Création de jeux : <a href="https://unity.com/" target="_blank">https://unity.com/</a></p>
+			<p style="text-align: left;">Lecture sur l’innovation technologique : <a href="https://www.wired.com/" target="_blank">https://www.wired.com/</a></p>
+			<p style="text-align: left;">Exploration de projets open source : <a href="https://github.com/" target="_blank">https://github.com/</a></p>
+			<hr>
+			<h3 style="text-align: left;">Compétences technologiques</h3>
+			<table border = "1" style=margin:auto;min-width:500px;text-align:center;>
+			<thead>
+				<th>Compétence</th>
+				<th>Niveau</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>HTML</td>
+					<td>Maître</td>
+				</tr>
+				<tr>
+					<td>CSS</td>
+					<td>Expert</td>
+				</tr>
+				<tr>
+					<td>Javascript</td>
+					<td>Expert</td>
+				</tr>
+				<tr>
+					<td>Python</td>
+					<td>Compétent</td>
+				</tr>
+				<tr>
+					<td>SQL</td>
+					<td>Débutant</td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+		<div class="propos">
+			<h2 style="float: right; margin-right: 436px;">À propos</h2>
+			<img class=alex src="images/alex.jpg" width=500>
+			<br>
+			<div class=info1>
+				<p style=text-align:center;>Nom : Alex Orion</p>
+				<p style=text-align:center>Profession : Développeur créatif et explorateur numérique</p>
+				<p style=text-align:center>Localisation : Monde virtuel</p>
+				<p style=text-align:center>Devise : « Comprendre le code, c’est comprendre le monde. »</p>
+				<p style=text-align:center>Je suis un passionné de programmation et de design numérique. Depuis mon adolescence, je m’intéresse à la création de sites web, aux jeux vidéo indépendants et à l’intelligence artificielle. J’aime résoudre des problèmes complexes et transformer des idées abstraites en projets concrets.</p>
+				<p style=text-align:center>Je crois que la technologie n’est pas seulement un outil, mais un langage universel qui permet de relier les idées, les cultures et les personnes. Mon parcours fictif m’a amené à participer à plusieurs projets collaboratifs en ligne, à apprendre de nouvelles compétences et à partager mes connaissances avec d’autres passionnés.</p>
+			</div>
 		</div>
 	</body>
 	
