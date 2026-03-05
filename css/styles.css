@@ -32,5 +32,9 @@ li a.active {
 	pointer-events: none;
 	cursor: default;
 }
+
+body {
+	font-family: sans-serif;
+}
 			
 /* Source: https://www.w3schools.com/css */
