@@ -3,6 +3,32 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<meta charset="UTF-8">
 		<title>Bienvenue!</title>
+		<style>
+			div {
+			  position: relative;
+			  background-color: #ffc;
+			  padding: 2rem;
+			  text-align: left;
+			  max-width: 200px;
+			}
+
+			div::before {
+			  content: "";
+
+			  position: absolute;
+			  z-index: -1;
+			  bottom: 15px;
+			  right: 5px;
+			  width: 50%;
+			  top: 80%;
+			  max-width: 200px;
+
+			  box-shadow: 0px 13px 10px black;
+			  transform: rotate(4deg);
+			}
+			
+			<!-- Source: https://developer.mozilla.org/fr/docs/Learn_web_development/Howto/Solve_CSS_problems/Create_fancy_boxes -->
+		</style>
 	</head>
 	<body>
 		<ul class="navbar">
@@ -11,5 +37,19 @@
 			<li><a href="voyage.html">Voyage</a></li>
 			<li><a href="biographie.html">Biographie</a></li>
 		</ul>
+		<br>
+		<div style="margin: auto; max-width: 1200px; min-width: 700px">
+			<h1>Page d’accueil — Le monde numérique d’Alex Orion</h1>
+			<p>Bienvenue sur le site officiel d’Alex Orion, un explorateur du monde numérique passionné par la technologie, la programmation et la créativité. Sur ce site, vous pourrez découvrir mon parcours fictif, mes centres d’intérêt, ainsi que les technologies qui me passionnent. Mon objectif est de partager des idées, des ressources et des projets qui montrent comment la technologie peut être utilisée pour créer, apprendre et résoudre des problèmes.</p>
+			<p>Que vous soyez intéressé par la programmation, les innovations technologiques ou simplement curieux de découvrir le monde du développement web, ce site vous permettra d’explorer différentes sections dédiées à mes passions et à mes compétences.</p>
+			<p>Grâce au menu de navigation, vous pourrez facilement accéder à plusieurs sections importantes du site :</p>
+			<ul>
+				<li>Biographie — pour en apprendre davantage sur mon parcours et mes intérêts.</li>
+				<li>Centres d’intérêt — pour découvrir mes technologies et passe-temps préférés.</li>
+				<li>Compétences technologiques — pour voir les domaines dans lesquels je travaille et mon niveau d’expérience.</li>
+			</ul>
+			<p>Ce site représente un espace où la curiosité, l’apprentissage et l’innovation se rencontrent. La technologie évolue constamment, et je crois qu’il est essentiel de rester curieux, de continuer à apprendre et de partager ses connaissances avec les autres.</p>
+			<p>Merci de visiter mon site et bonne exploration !</p>
+		</div>
 	</body>
 </html>
