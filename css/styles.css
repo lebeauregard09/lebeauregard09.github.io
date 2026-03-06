@@ -11,11 +11,11 @@
 	background-color: #333333;
 }
 
-li {
+.navbar li {
 	float: left;
 }
 
-li a {
+.navbar li a {
 	display: block;
 	color: white;
 	text-align: center;
@@ -23,11 +23,11 @@ li a {
 	text-decoration: none;
 }
 
-li a:hover {
+.navbar li a:hover {
 	background-color: #111111;
 }
 			
-li a.active {
+.navbar li a.active {
 	background-color: #a2c1e2;
 	pointer-events: none;
 	cursor: default;
