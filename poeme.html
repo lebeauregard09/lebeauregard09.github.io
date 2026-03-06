@@ -1,34 +1,30 @@
-<!DOCTYPE html>
-
 <html>
 
 	<head>
 		<style>
-			.auteur2 {
-				float: right;
-				padding-right: 400px;
-				padding-top: 40px;
+			.parent {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 20px;
 			}
 			
-			div {
-				position: absolute;
-				right: 55%;
-				top: 10%;
-				/* Source : https://www.w3schools.com/howto/howto_css_image_text.asp */
+			.droite {
+				display: flex;
+				justify-content: left;
+				align-items: center;
+				/* Source: Gemini */
 			}
 			
-			.auteur {
-				float: left;
-				padding-left: 90px;
+			.gauche {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				/* Source: Gemini */
 			}
-			
-			.auteur3 {
-				padding-top: 50px;
-				padding-right: 50px;
-			}
-			
+
 			body {
 			  background-image: url("https://wallpapers.com/images/hd/old-paper-texture-1920-x-1080-background-hsxlgfzk6xvc6zrm.jpg");
+			  background-size: cover;
 			}
 		</style>
 		<link rel="stylesheet" href="css/styles.css">
@@ -42,29 +38,39 @@
 			<li><a href="voyage.html">Voyage</a></li>
 			<li><a href="biographie.html">Biographie</a></li>
 		</ul>
-		<img class="auteur2" src="https://cdn.britannica.com/40/1340-050-39EB4F43/photograph-Victor-Hugo-Nadar.jpg" width = 580/>
-		<div style="text-align:center;">
-			<h1> <a href="https://lesvoixdelapoesie.ca/lire/poemes/demain-des-laube">Demain dès l’aube…</a></h1>
-			<img class="auteur" src="images/hugo.png" width = 100>
-			<h2 class="auteur3">Victor Hugo</h2>
-			<br>
-			<br>
-			<br>
-			<p>Demain, dès l’aube, à l’heure où blanchit la campagne,</p>
-			<p>Je partirai. Vois-tu, je sais que tu m’attends.</p>
-			<p>J’irai par la forêt, j’irai par la montagne.</p>
-			<p>Je ne puis demeurer loin de toi plus longtemps.</p>
-			<br>
-			<p>Je marcherai les yeux fixés sur mes pensées,</p>
-			<p>Sans rien voir au dehors, sans entendre aucun bruit,</p>
-			<p>Seul, inconnu, le dos courbé, les mains croisées,</p>
-			<p>Triste, et le jour pour moi sera comme la nuit.</p>
-			<br>
-			<p>Je ne regarderai ni l’or du soir qui tombe,</p>
-			<p>Ni les voiles au loin descendant vers Harfleur,</p>
-			<p>Et quand j’arriverai, je mettrai sur ta tombe</p>
-			<p>Un bouquet de houx vert et de bruyère en fleur.</p>
-			<br>
+		<div class="parent">
+			<div class="gauche">
+			  <div class="poeme" style="display:flex; flex-direction:column; align-items: center">
+				<div style="display: flex; justify-content: center">
+					<h1><a href="https://lesvoixdelapoesie.ca/lire/poemes/demain-des-laube" target=_blank>Demain dès l’aube…</a></h1>
+				</div>
+				<div style="display: flex; align-content: center; gap: 20px;">
+					<img src="images/hugo.png" width = 100>
+					<!-- Source image: https://en.wikiquote.org/wiki/Victor_Hugo -->
+					<h2 style="margin:auto">Victor Hugo</h2>
+				</div>
+				<div>
+					<p>Demain, dès l’aube, à l’heure où blanchit la campagne,</p>
+					<p>Je partirai. Vois-tu, je sais que tu m’attends.</p>
+					<p>J’irai par la forêt, j’irai par la montagne.</p>
+					<p>Je ne puis demeurer loin de toi plus longtemps.</p>
+					<br>
+					<p>Je marcherai les yeux fixés sur mes pensées,</p>
+					<p>Sans rien voir au dehors, sans entendre aucun bruit,</p>
+					<p>Seul, inconnu, le dos courbé, les mains croisées,</p>
+					<p>Triste, et le jour pour moi sera comme la nuit.</p>
+					<br>
+					<p>Je ne regarderai ni l’or du soir qui tombe,</p>
+					<p>Ni les voiles au loin descendant vers Harfleur,</p>
+					<p>Et quand j’arriverai, je mettrai sur ta tombe</p>
+					<p>Un bouquet de houx vert et de bruyère en fleur.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="droite">
+				<img src="https://cdn.britannica.com/40/1340-050-39EB4F43/photograph-Victor-Hugo-Nadar.jpg" width = 580/>
+			</div>
+
 		</div>
 	</body>
 	
